@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Lista</title>
+    </head>
+    <body>
+        <h1>Lista</h1>
+        <ul>
+            <li th:each="member : ${members}">
+                <a th:href="@{/members/{id}(id=${member.id})}" th:text="${member}"></a>
+            </li>
+        </ul>
+    </body>
+
+</html>
