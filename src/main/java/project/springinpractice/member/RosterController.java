@@ -36,7 +36,7 @@ public class RosterController {
     }
 
     @GetMapping("/{id}")
-    public String member(@PathVariable("id") Integer id, Model model) {
+    public String member(@PathVariable("id") int id, Model model) {
         model.addAttribute("member", members.get(id));
         return "member";
     }

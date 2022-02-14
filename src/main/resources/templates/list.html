@@ -7,8 +7,8 @@
     <body>
         <h1>Lista</h1>
         <ul>
-            <li th:each="member : ${members}">
-                <a th:href="@{/members/{id}(id=${member.id})}" th:text="${member}"></a>
+            <li th:each="member, i : ${members}">
+                <a th:href="@{/members/{id}(id=${i.index})}" th:text="${member}"></a>
             </li>
         </ul>
     </body>

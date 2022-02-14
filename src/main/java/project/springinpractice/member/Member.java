@@ -14,6 +14,8 @@ public class Member {
     private String firstName;
     private String lastName;
 
+    public Member() {}
+
     public Member(String firstname, String lastName) {
         this.firstName = firstname;
         this.lastName = lastName;
